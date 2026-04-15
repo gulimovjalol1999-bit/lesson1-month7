@@ -52,7 +52,7 @@ export class ItemService {
     return 'Updated';
   }
 
-  deleteItem(id: number, dto: Partial<CreateItemDto>): string {
+  deleteItem(id: number) {
     const index = this.items.findIndex((item) => item.id === id);
 
     if (index === -1) {
